@@ -1,0 +1,133 @@
+from opendcx import OpenDCX
+from tools import *
+
+o = OpenDCX()
+
+o.mute_channel(
+    get_channel("a")
+)
+o.mute_channel(
+    get_channel("b")
+)
+o.mute_channel(
+    get_channel("c")
+)
+
+o.mute_channel(
+    get_channel("1")
+)
+o.mute_channel(
+    get_channel("2")
+)
+o.mute_channel(
+    get_channel("3")
+)
+o.mute_channel(
+    get_channel("4")
+)
+o.mute_channel(
+    get_channel("5")
+)
+o.mute_channel(
+    get_channel("6")
+)
+
+o.set_gain(
+    get_channel("a"),
+    db_to_gain_value(0)
+)
+o.set_gain(
+    get_channel("b"),
+    db_to_gain_value(0)
+)
+o.set_gain(
+    get_channel("c"),
+    db_to_gain_value(0)
+)
+
+o.set_gain(
+    get_channel("1"),
+    db_to_gain_value(0)
+)
+o.set_gain(
+    get_channel("2"),
+    db_to_gain_value(0)
+)
+o.set_gain(
+    get_channel("3"),
+    db_to_gain_value(0)
+)
+o.set_gain(
+    get_channel("4"),
+    db_to_gain_value(0)
+)
+o.set_gain(
+    get_channel("5"),
+    db_to_gain_value(0)
+)
+o.set_gain(
+    get_channel("6"),
+    db_to_gain_value(0)
+)
+
+o.set_highpass_filter(
+    get_channel("1"),
+    get_filter("but48"),
+    hz_to_param(39)
+)
+o.set_lowpass_filter(
+    get_channel("1"),
+    get_filter("but48"),
+    hz_to_param(105)
+)
+o.set_highpass_filter(
+    get_channel("2"),
+    get_filter("but48"),
+    hz_to_param(39)
+)
+o.set_lowpass_filter(
+    get_channel("2"),
+    get_filter("but48"),
+    hz_to_param(105)
+)
+o.set_highpass_filter(
+    get_channel("3"),
+    get_filter("but48"),
+    hz_to_param(39)
+)
+o.set_lowpass_filter(
+    get_channel("3"),
+    get_filter("but48"),
+    hz_to_param(105)
+)
+
+o.set_highpass_filter(
+    get_channel("4"),
+    get_filter("but48"),
+    hz_to_param(90)
+)
+o.set_lowpass_filter(
+    get_channel("4"),
+    get_filter(0),
+    hz_to_param(1)
+)
+o.set_highpass_filter(
+    get_channel("5"),
+    get_filter("but48"),
+    hz_to_param(90)
+)
+o.set_lowpass_filter(
+    get_channel("5"),
+    get_filter(0),
+    hz_to_param(1)
+)
+o.set_highpass_filter(
+    get_channel("6"),
+    get_filter(0),
+    hz_to_param(1)
+)
+o.set_lowpass_filter(
+    get_channel("6"),
+    get_filter(0),
+    hz_to_param(1)
+)
