@@ -55,5 +55,7 @@ class OpenDCX(object):
         self.send_command(0x20, 0x01, addr, 0x41, input_source)
 
 
+o = OpenDCX()
+o.set_input_source(get_channel("1"), get_channel("sum"))
 
 

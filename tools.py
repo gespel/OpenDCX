@@ -49,6 +49,7 @@ def get_channel(name):
     elif name == "6":
         return 0x0A
 
+
 def to_sysex_14bit(value):
     valuehi = (value >> 7) & 0x7F
     valuelo = value & 0x7F
